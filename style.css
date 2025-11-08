@@ -1,7 +1,16 @@
+/* ==============================
+   Global Styles
+   ============================== */
 body {
   background: #171717;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* ==============================
+   Link Buttons
+   ============================== */
 a {
   position: relative;
   display: inline-block;
@@ -9,8 +18,10 @@ a {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
+  overflow: hidden;
   color: white;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  border-radius: 4px;
 }
 
 a:hover {
@@ -19,9 +30,12 @@ a:hover {
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
+/* ==============================
+   State Indicators
+   ============================== */
 .selected {
   box-shadow: 0 0 10px #0ac00a, 0 0 20px #0ac00a, 0 0 40px #0ac00a;
-  color: white;
+  color: #ffffff;
 }
 
 .unselected {
@@ -29,31 +43,51 @@ a:hover {
   border: 1px solid #343a40;
 }
 
+/* ==============================
+   Headings
+   ============================== */
 .heading {
   color: white;
+  text-align: center;
+  font-weight: 600;
 }
 
+/* ==============================
+   Sorting Button
+   ============================== */
 .sort {
   float: right;
   border: 1px solid #2196f3;
   color: #2196f3;
-  transition: 0.3s;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
 .sort:hover {
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
   color: white;
+  background: #2196f3;
 }
 
+/* ==============================
+   Button Utility Class
+   ============================== */
 .btn {
   margin: 10px;
+  cursor: pointer;
 }
 
+/* ==============================
+   Custom Button (New)
+   ============================== */
 .new {
   background-color: #373d43;
   color: #ffffff;
   border: 1px solid #8bcdd2;
-  transition: 0.3s;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: 0.3s ease;
 }
 
 .new:hover {
@@ -61,27 +95,48 @@ a:hover {
   color: white;
 }
 
+/* ==============================
+   Sub-Heading
+   ============================== */
 h2 {
   margin: 5px auto;
   text-align: center;
   color: #05c7d4;
   text-transform: capitalize;
+  font-weight: 500;
 }
 
+/* ==============================
+   Bar Section
+   ============================== */
 #bar {
-  margin: 2px auto;
+  margin: 10px auto;
   width: 60%;
+  display: flex;
+  justify-content: center;
 }
 
+/* ==============================
+   Text with Left Border
+   ============================== */
 .color {
   color: white;
   border-left: 1px solid white;
   padding-left: 10px;
 }
 
+/* ==============================
+   Highlighted Element
+   ============================== */
 .special {
   background: rgba(33, 150, 243, 0.7);
   display: inline-block;
   margin: 0 1px;
   border: 1px solid black;
+  border-radius: 3px;
+  padding: 4px 8px;
+  color: #fff;
+  font-size: 14px;
+}
+
 }
